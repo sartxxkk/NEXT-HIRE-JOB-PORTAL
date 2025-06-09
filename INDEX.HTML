@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProJob Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>🚀 Welcome To NextHire</h1>
+    <p>Discover opportunities. Post openings. Hire the best talent.</p>
+  </header>
+
+  <section class="features">
+    <div class="card">
+      <h2>🔍 Find a Job</h2>
+      <p>Browse listings from top companies across industries.</p>
+      <button onclick="scrollToSection('job-list')">Explore Jobs</button>
+    </div>
+
+    <div class="card">
+      <h2>📢 Post a Job</h2>
+      <p>Share job openings and hire top candidates quickly.</p>
+      <button onclick="scrollToSection('post-job')">Post Now</button>
+    </div>
+
+    <div class="card">
+      <h2>👤 Login / Register</h2>
+      <p>Access your dashboard to manage applications or jobs.</p>
+      <button>Sign In</button>
+    </div>
+  </section>
+
+  <section class="search">
+    <input type="text" id="searchInput" placeholder="Search for jobs...">
+    <button onclick="searchJobs()">Search</button>
+  </section>
+
+  <section id="job-list" class="job-list">
+    <!-- Jobs will be rendered here -->
+  </section>
+
+  <section id="post-job" class="post-job">
+    <h2>📝 Post a New Job</h2>
+    <form id="jobForm">
+      <input type="text" id="title" placeholder="Job Title" required />
+      <input type="text" id="company" placeholder="Company Name" required />
+      <textarea id="desc" placeholder="Job Description" required></textarea>
+      <button type="submit">Post Job</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>NextHire Portal. Crafted with ❤</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
